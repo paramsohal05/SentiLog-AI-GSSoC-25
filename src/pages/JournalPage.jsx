@@ -1,7 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import TextInput from "../components/TextInput";
 import SentimentCard from "../components/SentimentCard";
 import api from "../axios";
 import { ThemeContext } from "../App";
@@ -99,8 +96,7 @@ const JournalPage = () => {
               border-[0.1px]  p-3 rounded-xl w-full min-h-[80px] resize-y focus:outline-none focus:ring-[0.1px]   font-medium shadow`}
             value={text}
             onChange={e => setText(e.target.value)}
-            placeholder="Paste some text or article here..."
-          />
+            placeholder="Paste some text or article here..."/>
                   <div className="absolute bottom-4 right-6 w-6 h-6 bg-gray-300 rounded-sm flex items-center justify-center">
                     <svg className="w-3 h-3 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
